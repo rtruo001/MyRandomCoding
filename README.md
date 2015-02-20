@@ -1,1 +1,1 @@
-Just random codes!
+Just random coding adventures!
