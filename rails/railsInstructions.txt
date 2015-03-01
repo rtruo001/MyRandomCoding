@@ -1,0 +1,75 @@
+//To initialize rails
+rails new <name> --database=<name>
+
+//To just freaken bundle and install
+bundle install
+
+//Gemfile is in vendor
+
+//In Gemfile, 
+gem "typhoeus" <--Misspelled
+typhoeus helps makes HTTP requests
+
+//In Gemfile
+gem "devise"
+devise is for creating users, authentication solutions.
+
+========================== MIGRATIONS
+//generates the devise
+rail generate devise user
+
+//generates a model groups
+rails generate model groups
+
+//generates the controller
+rails generate controller home index
+^ ROUTE IT to know where your Rails app is.
+
+AFTER GENERATING, go to migrate files in sublime
+
+//Do this after creating your migrate files MIGRATING
+rake db:migrate
+
+Now, go to the models of the files
+DO the relationships: http://guides.rubyonrails.org/association_basics.html (relationships)
+==========================
+
+
+========================== API
+//EVERYTHING HERE IS IN THE v1 directory
+
+Use routes.rb for routing different
+==========================
+
+
+Making $http(req) uses callback fnctions
+homeCtrl.js
+
+//Inserting components
+
+//views/home is where the index is.
+
+//Redirects url to another url
+redirect_to(url) OR redirect_to url
+
+rvm = ruby version manager!
+
+//to Start server
+rails s
+
+//to open the console
+//Users.groups.etc. (USES RELATIONSHIPS)
+rails c
+
+//Creates my database
+rake db:create 
+
+//Rollback a migration
+rake db:rollback
+
+//DEBUGGER THAT WOULD HELP
+byebug
+
+//http dependency
+$http
+
