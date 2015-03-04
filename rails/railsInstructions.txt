@@ -18,7 +18,7 @@ devise is for creating users, authentication solutions.
 //generates the devise
 rail generate devise user
 
-//generates a model groups
+//generates a model groups`
 rails generate model groups
 
 //generates the controller
