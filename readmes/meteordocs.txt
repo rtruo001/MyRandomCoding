@@ -1,0 +1,73 @@
+LINK: docs.meteor.com/#/basic/underscore
+
+========================
+
+Template.myTemplate.helpers({
+  
+});
+
+{{#each _____}}
+{{/each}}
+
+{{#if _____}} 
+{{else}}
+{{/if}}
+
+{{#with}}
+{{/with}}
+
+
+========================
+
+Template.myTemplate.events({
+  "event_handler css_selector": function (event, template) {
+    /*
+    Handles events for that specific css selector
+    */
+  }  
+});
+
+Common event handlers:
+
+click
+mousedown
+mouseup
+mouseenter
+mouseleave
+keydown
+keyup
+keypress
+focus
+blur
+change
+
+
+========================
+
+Template.myTemplate.onRendered({
+  /*
+  for instances that are inserted onto the page for the first time
+  */
+})
+
+
+========================
+
+Accounts
+
+Packages:
+accounts-ui
+accounts-facebook, accounts-google, accounts-github, accounts-twitter, etc.
+
+Do this in terminal:
+meteor add accounts-<packages>
+
+In HTML:
+{{> loginButtons}}
+
+
+
+
+
+
+
