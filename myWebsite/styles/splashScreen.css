@@ -1,0 +1,26 @@
+/*  =============================================================================
+    
+    Copyright © Randy Truong
+    ========================================================================== */
+
+#main-splash-screen-section {
+  /* The position of the main splash screen section */
+  top: 0%;
+
+  background-image: url("../img/mountainPose-min.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: none;
+
+  position: relative;
+}
+
+#my-name-splash-screen {
+  color: #AAAAAA;
+  font-size: 120px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 0px 0px 1px #000000;
+  position: relative;
+  top: 80px;
+}

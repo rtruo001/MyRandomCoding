@@ -1,0 +1,133 @@
+<!--
+/*  =============================================================================
+    
+    Copyright © Randy Truong
+    ========================================================================== */
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <!-- <meta name="viewport" content="width=device-width" /> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
+  
+  <!-- Font Awesome / Icons -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/webpage.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/splashScreen.css">
+  <link rel="stylesheet" href="styles/workExperience.css">
+  <link rel="stylesheet" href="styles/projects.css">
+  <link rel="stylesheet" href="styles/contact.css">
+
+</head>
+
+<body class='disable-hover'>
+
+  <!-- Nav section which contains each page's section -->
+  <nav>
+    <div class='nav-section'>
+      <div class='nav-bullet-section' id='dot-slide-1' onclick='goToClickedSlide(this)'>
+        <div class='nav-dots' id='dot-1'></div>
+        Home
+      </div>
+
+      <div class='nav-bullet-section' id='dot-slide-2' onclick='goToClickedSlide(this)'>
+        <div class='nav-dots' id='dot-2'></div>
+        About Me
+      </div>
+
+      <div class='nav-bullet-section' id='dot-slide-3' onclick='goToClickedSlide(this)'>
+        <div class='nav-dots' id='dot-3'></div>
+        Projects
+      </div>
+
+      <div class='nav-bullet-section' id='dot-slide-4' onclick='goToClickedSlide(this)'>
+        <div class='nav-dots' id='dot-4'></div>
+        Contact
+      </div>
+    </div>
+  </nav>
+
+  <!-- The actual VERTICAL pages -->
+  <div class='pages-vertical'>
+    <!-- The main Home section -->
+    <div class='page' id='main-splash-screen-section' >
+      <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
+      <div id='my-name-splash-screen'>Randy Truong</div>
+    </div>
+    
+    <!-- Work experience section -->
+    <div class='page' id='work-experience-section'>
+      <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+      <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
+      Hi
+    </div>
+    
+    <!-- Projects section, with horizontal pages, each page represents a project -->
+    <div class='page' id='project-section'>
+
+      <!-- The project nav section -->
+      <div class='project-dots'>
+        <div class='project-bullet-section' onclick='goToProjectClickedSlide("project-dot-1")'>
+          <div class='project-dot' id='project-dot-1'></div>
+        </div>
+        <div class='project-bullet-section' onclick='goToProjectClickedSlide("project-dot-2")'>
+          <div class='project-dot' id='project-dot-2'></div>
+        </div>
+        <div class='project-bullet-section' onclick='goToProjectClickedSlide("project-dot-3")'>
+          <div class='project-dot' id='project-dot-3'></div>
+        </div>
+      </div>
+
+      <!-- Project HORIZONTAL pages -->
+      <div class='pages-horizontal'>
+        <div class='page' id='project-1'>
+          <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+          <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
+          <button class='left-slide-button' onclick='leftSlide()'><i class="fa fa-angle-left"></i></button>
+          <button class='right-slide-button' onclick='rightSlide()'><i class="fa fa-angle-right"></i></button>
+          Proj1
+        </div>
+        
+        <div class='page' id='project-2'>
+          <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+          <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
+          <button class='left-slide-button' onclick='leftSlide()'><i class="fa fa-angle-left"></i></button>
+          <button class='right-slide-button' onclick='rightSlide()'><i class="fa fa-angle-right"></i></button>
+          Proj2
+        </div>
+        
+        <div class='page' id='project-3'>
+          <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+          <button class='down-slide-button' onclick='downSlide()'><i class="fa fa-angle-down"></i></button>
+          <button class='left-slide-button' onclick='leftSlide()'><i class="fa fa-angle-left"></i></button>
+          <button class='right-slide-button' onclick='rightSlide()'><i class="fa fa-angle-right"></i></button>
+          Proj3
+        </div>
+      </div>  
+    </div>
+
+    <!-- My contact section -->
+    <div class='page' id='contact-section'>
+      <button class='up-slide-button' onclick='upSlide()'><i class="fa fa-angle-up"></i></button>
+      Contact
+    </div>
+  </div>
+
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="js/webpage.js"></script>
+  <script type="text/javascript" src="js/scroll.js"></script>
+  <script type="text/javascript" src="js/nav.js"></script>
+  <script type="text/javascript" src="js/projects.js"></script>
+</body>

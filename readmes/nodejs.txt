@@ -1,0 +1,62 @@
+Using the Express framework on top of NodeJS
+
+==========================
+To create an application skeleton:
+
+sudo npm install express-generator 
+==========================
+
+==========================
+To start an express application:
+
+express _________
+==========================
+
+
+==========================
+Go to directory of application.
+To update the package files, -d logs it to the terminal
+
+npm install -d
+==========================
+
+
+==========================
+To start the server of express
+
+npm start
+==========================
+
+
+==========================
+Removes unused dependencies in the node_modules
+
+npm prune
+==========================
+
+
+==========================
+Directories
+
+
+node_modules: Contains the downloaded dependencies that were installed through npm install.
+
+Public: Contains any assets that will be available to the public-facing part of the application such as images, JavaScript files and style sheets.
+
+Routes: The routes for the application.
+
+Views: The view templates for the application. You will not be using these in this article as you will be building a JSON APS.
+
+app.js: The entry point of your application.
+
+package.json: The file which includes the dependency declarations for your application.
+==========================
+
+
+==========================
+For Mongodb
+
+npm install mongoose
+==========================
+
+

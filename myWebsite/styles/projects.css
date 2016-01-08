@@ -1,0 +1,65 @@
+/*  =============================================================================
+    
+    Copyright © Randy Truong
+    ========================================================================== */
+
+#project-section {
+  top: 200%;
+}
+
+#project-1 {
+  left: 0%;
+  background-color: #444444;
+}
+
+#project-2 {
+  left: 100%;
+  background-color: #FFAAAA;
+}
+
+#project-3 {
+  left: 200%;
+  background-color: #DDDDDD;
+}
+
+/* =============================================================================
+
+THE BUTTONS FOR NAVIGATING THROUGH PROJECTS
+
+================================================================================ */
+
+#project-dot-1 {
+  background-color: white;
+}
+
+/* The entire project dots div */
+.project-dots {
+  width: 100px;
+  text-align: center;
+  background-color: transparent;
+  position: absolute;
+  bottom: 60px;
+  z-index: 5000000;
+}
+
+.project-bullet-section {
+  height: 14px;
+  display: inline-block;
+  /* Changes cursor when hovering */
+  cursor: pointer; cursor: hand;
+}
+
+/* Each individual dot in the projects dot section */
+.project-dot {
+  width: 9px;
+  height: 9px;
+  margin-left: 3px;
+  margin-right: 3px;
+
+  border: 1px solid #888888;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.project-bullet-section:hover .project-dot{
+  border-color: white;
+}
