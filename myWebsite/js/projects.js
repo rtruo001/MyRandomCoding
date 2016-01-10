@@ -30,6 +30,8 @@ function goToProjectClickedSlide(divId) {
     $('#project-dot-3').css('background-color', 'white');
     divWindowPositionX = 2;
   }
+  // Changes the nav font colors depending on the background
+  checkFontColorInNav();
 }
 
 // Change the colors of the dots depending on which dot is moved

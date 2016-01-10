@@ -18,17 +18,20 @@ nav {
   /* Spacing between each dot section within nav bar */
   padding-left: 50px;
 
-  /*background-color: black;*/
-  /*opacity: 0.50; */
-  /*color: rgba(255,255,255,1.0);*/
   z-index: 100000;
+
+  /* Keeps the nav section in the center */
+  display: flex;
+  /* Vertically center the nav */
+  align-items: center; 
 }
 
 /* The entire nav dot section */
 .nav-section {
-  /* Keeps the nav section  */
-  position: relative;
-  top: 45%;
+  
+  /*position: relative;*/
+
+  /* When hovering, changes the cursor to the hand */
   cursor: pointer; cursor: hand;
 }
 
@@ -37,8 +40,6 @@ nav {
   width: auto;
   height: auto;
   opacity: 1.0;
-  /* To see the text a little bit when over white */
-  text-shadow: 0px 0px 1px black;
 }
 
 /* Represents the dots in the nav section */

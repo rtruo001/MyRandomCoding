@@ -42,6 +42,22 @@ function goToClickedSlide(div) {
     $('#dot-4').css('background-color', 'white');
     divWindowPositionY = 3;
   }
+  // Changes the nav font colors depending on the background
+  checkFontColorInNav();
+}
+
+// Changes the color of the text in the nav depending on which background the page is currently at
+// Does this in order to easily see the nav text as pages change
+function checkFontColorInNav() {
+  if (pagesArray[divWindowPositionY][divWindowPositionX] == '#work-experience-section' ||
+      pagesArray[divWindowPositionY][divWindowPositionX] == '#main-splash-screen-section' ||
+      pagesArray[divWindowPositionY][divWindowPositionX] == '#project-1' ||
+      pagesArray[divWindowPositionY][divWindowPositionX] == '#contact-section') {
+    $('nav').css('color', 'white');  
+  }
+  else {
+    $('nav').css('color', 'black');
+  }
 }
 
 // Change the colors of the dots depending on which dot is moved

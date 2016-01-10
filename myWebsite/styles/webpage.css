@@ -26,19 +26,19 @@ body {
 }
 
 .pages-vertical {
-  -webkit-transition: top 1.2s;
-  -moz-transition: top 1.2s;
-  -0-transition: top 1.2s;
-  -ms-transition: top 1.2s;
-  transition: top 1.2s;
+  -webkit-transition: top 1.0s;
+  -moz-transition: top 1.0s;
+  -0-transition: top 1.0s;
+  -ms-transition: top 1.0s;
+  transition: top 1.0s;
 }
 
 .pages-horizontal {
-  -webkit-transition: left 1.2s;
-  -moz-transition: left 1.2s;
-  -0-transition: left 1.2s;
-  -ms-transition: left 1.2s;
-  transition: left 1.2s;
+  -webkit-transition: left 1.0s;
+  -moz-transition: left 1.0s;
+  -0-transition: left 1.0s;
+  -ms-transition: left 1.0s;
+  transition: left 1.0s;
 }
 
 .notransition {
@@ -58,6 +58,22 @@ body {
   overflow: hidden;
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+.text-container {
+  
+}
+
+/* Needed for the width to also including border and padding sizes */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a {
+  width: auto;
+  height: auto;
 }
 
 

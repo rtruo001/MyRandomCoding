@@ -99,6 +99,7 @@ function stopWheel(e) {
 
   // If not in tbe process of a scroll, then actually scrolls the screen depending if the screen was scrollded down or up
   if (!ifScrollTransitioning) {
+    reenableButtonAnimations();
     var evt=window.event || e
 
     // The Speed and direction of the mousewheel scroll
@@ -200,6 +201,9 @@ function upSlide() {
   // Change color of the dots to indicate which page user is currently on
   changeColorOfDotsForNav(divWindowPositionY, "white");
 
+  // Changes the nav font colors depending on the background
+  checkFontColorInNav();
+
   // Scrolling is now transitioning
   ifScrollTransitioning = true;
 
@@ -224,6 +228,9 @@ function downSlide() {
 
   // Change color of the dots to indicate which page user is currently on
   changeColorOfDotsForNav(divWindowPositionY, "white");
+
+  // Changes the nav font colors depending on the background
+  checkFontColorInNav();
   
   // Scrolling is now transitioning
   ifScrollTransitioning = true;
@@ -254,6 +261,9 @@ function leftSlide() {
 
   // Change color of the dots to indicate which page user is currently on
   changeColorOfDotsForProjectNav(divWindowPositionX, "white");
+
+  // Changes the nav font colors depending on the background
+  checkFontColorInNav();
 
   // Scrolling is now transitioning
   ifScrollTransitioning = true;
@@ -288,6 +298,9 @@ function rightSlide() {
 
   // Change color of the dots to indicate which page user is currently on
   changeColorOfDotsForProjectNav(divWindowPositionX, "white");
+
+  // Changes the nav font colors depending on the background
+  checkFontColorInNav();
 
   // Scrolling is now transitioning
   ifScrollTransitioning = true;
