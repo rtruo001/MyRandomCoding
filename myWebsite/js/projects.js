@@ -14,6 +14,10 @@ function goToProjectClickedSlide(divId) {
     $('#project-dot-1').css('background-color', 'white');
     $('#project-dot-2').css('background-color', 'transparent');
     $('#project-dot-3').css('background-color', 'transparent');
+    if (divWindowPositionX == 0) {
+      ifScrollTransitioning = false;
+      reenableButtonAnimations();
+    }
     divWindowPositionX = 0;
   }
   else if (divId == 'project-dot-2') {
@@ -21,6 +25,10 @@ function goToProjectClickedSlide(divId) {
     $('#project-dot-1').css('background-color', 'transparent');
     $('#project-dot-2').css('background-color', 'white');
     $('#project-dot-3').css('background-color', 'transparent');
+    if (divWindowPositionX == 1) {
+      ifScrollTransitioning = false;
+      reenableButtonAnimations();  
+    }
     divWindowPositionX = 1;
   }
   else if (divId == 'project-dot-3') {
@@ -28,6 +36,10 @@ function goToProjectClickedSlide(divId) {
     $('#project-dot-1').css('background-color', 'transparent');
     $('#project-dot-2').css('background-color', 'transparent');
     $('#project-dot-3').css('background-color', 'white');
+    if (divWindowPositionX == 2) {
+      ifScrollTransitioning = false;
+      reenableButtonAnimations();
+    }
     divWindowPositionX = 2;
   }
   // Changes the nav font colors depending on the background

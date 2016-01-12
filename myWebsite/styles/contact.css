@@ -16,9 +16,9 @@
 }
 
 .contact-email {
-  margin-bottom: 20px;
   color: #CCCCCC;
-  font-size: 30px;
+  font-size: 24px;
+  margin: 20px;
 }
 
 .email-actual-text {
@@ -93,7 +93,8 @@ body.disable-hover .icons-section .fa {
 
 @media all and (max-width: 680px) {
   .contact-email {
-    font-size: 22px;
+    font-size: 18px;
+    margin: 0px
   }
 
   .icons-section {

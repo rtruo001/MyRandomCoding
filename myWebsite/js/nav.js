@@ -16,6 +16,11 @@ function goToClickedSlide(div) {
     $('#dot-2').css('background-color', 'transparent');
     $('#dot-3').css('background-color', 'transparent');
     $('#dot-4').css('background-color', 'transparent');
+    // For when the slide clicked is already at its position
+    if (divWindowPositionY == 0) {
+      ifScrollTransitioning = false;
+      reenableButtonAnimations();
+    }    
     divWindowPositionY = 0;
   }
   else if (divId == 'dot-slide-2') {
@@ -24,6 +29,10 @@ function goToClickedSlide(div) {
     $('#dot-2').css('background-color', 'white');
     $('#dot-3').css('background-color', 'transparent');
     $('#dot-4').css('background-color', 'transparent');
+    if (divWindowPositionY == 1) {
+      ifScrollTransitioning = false;
+      reenableButtonAnimations();
+    }
     divWindowPositionY = 1;
   }
   else if (divId == 'dot-slide-3') {
@@ -32,6 +41,10 @@ function goToClickedSlide(div) {
     $('#dot-2').css('background-color', 'transparent');
     $('#dot-3').css('background-color', 'white');
     $('#dot-4').css('background-color', 'transparent');
+    if (divWindowPositionY == 2) {
+      ifScrollTransitioning = false;
+      reenableButtonAnimations();
+    }
     divWindowPositionY = 2;
   }
   else if (divId == 'dot-slide-4') {
@@ -40,6 +53,10 @@ function goToClickedSlide(div) {
     $('#dot-2').css('background-color', 'transparent');
     $('#dot-3').css('background-color', 'transparent');
     $('#dot-4').css('background-color', 'white');
+    if (divWindowPositionY == 3) {
+      ifScrollTransitioning = false;
+      reenableButtonAnimations();
+    }
     divWindowPositionY = 3;
   }
   // Changes the nav font colors depending on the background
@@ -52,6 +69,7 @@ function checkFontColorInNav() {
   if (pagesArray[divWindowPositionY][divWindowPositionX] == '#work-experience-section' ||
       pagesArray[divWindowPositionY][divWindowPositionX] == '#main-splash-screen-section' ||
       pagesArray[divWindowPositionY][divWindowPositionX] == '#project-1' ||
+      // pagesArray[divWindowPositionY][divWindowPositionX] == '#project-3' ||
       pagesArray[divWindowPositionY][divWindowPositionX] == '#contact-section') {
     $('nav').css('color', 'white');  
   }
