@@ -101,7 +101,6 @@ function moveToTopOfCurrentDiv() {
 // $.scrollTo($(pagesArray[divWindowPositionY][divWindowPositionX]), 0);
   // $(window).scrollTop($(pagesArray[divWindowPositionY][divWindowPositionX]).offsetHeight);
 
-
   var positionOfCurrDiv = $(pagesArray[divWindowPositionY][divWindowPositionX]).offset()
   var divTop = parseInt(positionOfCurrDiv.top, 10);
   var divLeft = parseInt(positionOfCurrDiv.left, 10);

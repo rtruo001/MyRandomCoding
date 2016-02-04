@@ -69,7 +69,7 @@ function checkFontColorInNav() {
   if (pagesArray[divWindowPositionY][divWindowPositionX] == '#work-experience-section' ||
       pagesArray[divWindowPositionY][divWindowPositionX] == '#main-splash-screen-section' ||
       pagesArray[divWindowPositionY][divWindowPositionX] == '#project-1' ||
-      // pagesArray[divWindowPositionY][divWindowPositionX] == '#project-3' ||
+      pagesArray[divWindowPositionY][divWindowPositionX] == '#project-3' ||
       pagesArray[divWindowPositionY][divWindowPositionX] == '#contact-section') {
     $('nav').css('color', 'white');  
   }
