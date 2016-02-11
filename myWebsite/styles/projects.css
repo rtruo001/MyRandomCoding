@@ -5,6 +5,7 @@
 
 #project-section {
   top: 200%;
+  height: 100vh;
 }
 
 #project-1 {
@@ -48,10 +49,10 @@
 
 .project-text {
   /* Font */
-  color: #555555;
+  color: #333333;
   font-size: 22px;
   /*font-size: 1vw;*/
-  font-weight: 600;
+  font-weight: 500;
 
   /* Keeps it right of the div */
   float: right;
@@ -69,8 +70,9 @@
 }
 
 .project-text h1 {
-  font-size: 40px;
-  font-style: bold;
+  font-size: 32px;
+  font-style: bolder;
+  margin-bottom: 10px;
 }
 
 #project-1 .img-png, #project-2 .img-png, #project-3 .img-png {
@@ -85,22 +87,43 @@
   object-fit: contain;
 }
 
+.hashtags {
+  margin-top: 5px; 
+}
+
+.hash-tags {
+  color: #888888;
+  margin-right: 10px;
+  margin-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+
+  font-weight: bolder;
+
+  border-bottom: 1px solid #999999;
+  display: inline-block;
+}
+
+.download-buttons img {
+  width: 10rem;
+  height: 3rem;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#project-1 .hash-tags {
+  color: #6A6A6A;
+  border-bottom: 1px solid #6A6A6A;
+
+}
+
 #project-3 .project-text {
   color: #FFFFFF;
 }
 
 #project-3 .hash-tags {
   color: #DDDDDD;
-}
-
-.hash-tags {
-  color: #777777;
-  margin-right: 10px;
-  padding-right: 5px;
-  padding-left: 5px;
-
-  border-bottom: 1px solid #777777;
-  display: inline-block;
+  border-bottom: 1px solid #DDDDDD;
 }
 
 .hash-tags:hover {
@@ -166,7 +189,6 @@ THE BUTTONS FOR NAVIGATING THROUGH PROJECTS
 
 /* The entire project dots div */
 .project-dots {
-  width: 100px;
   text-align: center;
   background-color: transparent;
   position: absolute;
